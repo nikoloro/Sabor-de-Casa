@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor de Casa – Premium Food & Bar Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="lang-switch">
+      <button id="langEnBtn">EN</button>
+      <button id="langEsBtn">ES</button>
+    </div>
+    <button id="darkToggleBtn" class="dark-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo-container">
+      <div class="logo-img" style="
+        width:55px;
+        height:55px;
+        background:#0033a0;
+        border-radius:8px;">
+      </div>
+      <h1 class="logo" data-en="Sabor de Casa" data-es="Sabor de Casa">Sabor de Casa</h1>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#hero" data-en="Home" data-es="Inicio">Home</a></li>
+        <li><a href="#menus" data-en="Menus" data-es="Menús">Menus</a></li>
+        <li><a href="#services" data-en="Services" data-es="Servicios">Services</a></li>
+        <li><a href="#gallery" data-en="Gallery" data-es="Galería">Gallery</a></li>
+        <li><a href="#reviews" data-en="Reviews" data-es="Reseñas">Reviews</a></li>
+        <li><a href="#faq" data-en="FAQ" data-es="Preguntas">FAQ</a></li>
+        <li><a href="#booking" class="nav-cta" data-en="Book Now" data-es="Reservar">Book Now</a></li>
+      </ul>
+    </nav>
+
+    <button id="mobileMenuBtn" class="mobile-menu">☰</button>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#hero" data-en="Home" data-es="Inicio">Home</a>
+    <a href="#menus" data-en="Menus" data-es="Menús">Menus</a>
+    <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+    <a href="#gallery" data-en="Gallery" data-es="Galería">Gallery</a>
+    <a href="#reviews" data-en="Reviews" data-es="Reseñas">Reviews</a>
+    <a href="#faq" data-en="FAQ" data-es="Preguntas">FAQ</a>
+    <a href="#booking" data-en="Book Now" data-es="Reservar">Book Now</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero section">
+      <div class="hero-content">
+        <h2 data-en="Premium Catering for Every Event"
+            data-es="Catering Premium para Cualquier Evento">
+          Premium Catering for Every Event
+        </h2>
+
+        <p class="hero-subtitle"
+           data-en="Drinks, food, and unforgettable service for weddings, birthdays, corporate events, and more."
+           data-es="Bebidas, comida y un servicio inolvidable para bodas, cumpleaños, eventos corporativos y más.">
+          Drinks, food, and unforgettable service for weddings, birthdays, corporate events, and more.
+        </p>
+
+        <ul class="hero-tags">
+          <li data-en="Weddings" data-es="Bodas">Weddings</li>
+          <li data-en="Birthdays" data-es="Cumpleaños">Birthdays</li>
+          <li data-en="Corporate Events" data-es="Eventos Corporativos">Corporate Events</li>
+          <li data-en="Quinceañeras" data-es="Quinceañeras">Quinceañeras</li>
+        </ul>
+
+        <div class="hero-cta">
+          <button id="heroBookBtn" class="primary-btn"
+                  data-en="Book Your Event"
+                  data-es="Reservar tu Evento">
+            Book Your Event
+          </button>
+
+          <a href="#menus" class="secondary-link"
+             data-en="View Menus" data-es="Ver Menús">
+            View Menus
+          </a>
+        </div>
+      </div>
+
+      <!-- HERO IMAGE (UPGRADED) -->
+      <div class="hero-image" style="
+        width:100%;
+        height:300px;
+        border-radius:12px;
+        box-shadow:var(--shadow-medium);
+        background-size:cover;
+        background-position:center;
+        background-image:url('YOUR-IMAGE-LINK-HERE');
+      "></div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="services" class="section about">
+      <h2 data-en="Why Choose Us" data-es="Por Qué Elegirnos">Why Choose Us</h2>
+
+      <p class="about-text"
+         data-en="Family-owned catering specializing in Latin fusion cuisine, professional bartending, and full-service events."
+         data-es="Catering familiar especializado en cocina fusión latina, servicio profesional de bar y eventos completos.">
+        Family-owned catering specializing in Latin fusion cuisine, professional bartending, and full-service events.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3 data-en="Licensed & Insured" data-es="Licenciados y Asegurados">Licensed & Insured</h3>
+          <p data-en="Fully licensed bartenders and insured catering service."
+             data-es="Bartenders licenciados y servicio de catering asegurado.">
+            Fully licensed bartenders and insured catering service.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3 data-en="Fresh Ingredients" data-es="Ingredientes Frescos">Fresh Ingredients</h3>
+          <p data-en="We prepare everything with fresh, high-quality ingredients."
+             data-es="Preparamos todo con ingredientes frescos y de alta calidad.">
+            We prepare everything with fresh, high-quality ingredients.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3 data-en="Custom Menus" data-es="Menús Personalizados">Custom Menus</h3>
+          <p data-en="Menus tailored to your event and preferences."
+             data-es="Menús adaptados a tu evento y preferencias.">
+            Menus tailored to your event and preferences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="section events">
+      <h2 data-en="Events We Cater" data-es="Eventos que Atendemos">Events We Cater</h2>
+
+      <div class="events-grid">
+        <div class="event-card" data-en="Weddings" data-es="Bodas">Weddings</div>
+        <div class="event-card" data-en="Corporate Events" data-es="Eventos Corporativos">Corporate Events</div>
+        <div class="event-card" data-en="Birthdays" data-es="Cumpleaños">Birthdays</div>
+        <div class="event-card" data-en="Quinceañeras" data-es="Quinceañeras">Quinceañeras</div>
+        <div class="event-card" data-en="Graduations" data-es="Graduaciones">Graduations</div>
+        <div class="event-card" data-en="Family Gatherings" data-es="Reuniones Familiares">Family Gatherings</div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section id="menus" class="section menus">
+      <h2 data-en="Catering Packages" data-es="Paquetes de Catering">Catering Packages</h2>
+
+      <div class="packages-grid">
+
+        <article class="package-card">
+          <h3 data-en="Taco Bar" data-es="Barra de Tacos">Taco Bar</h3>
+          <p data-en="Carne asada, chicken, al pastor, handmade tortillas, salsas, toppings."
+             data-es="Carne asada, pollo, al pastor, tortillas hechas a mano, salsas, toppings.">
+            Carne asada, chicken, al pastor, handmade tortillas, salsas, toppings.
+          </p>
+          <p class="package-meta" data-en="Serves 30–50 guests" data-es="Para 30–50 invitados">Serves 30–50 guests</p>
+          <p class="package-price" data-en="Starting at $18 per guest" data-es="Desde $18 por invitado">Starting at $18 per guest</p>
+        </article>
+
+        <article class="package-card">
+          <h3 data-en="Latin Fusion Buffet" data-es="Buffet Fusión Latina">Latin Fusion Buffet</h3>
+          <p data-en="Tacos, arepas, empanadas, rice, salads, sides."
+             data-es="Tacos, arepas, empanadas, arroz, ensaladas, acompañamientos.">
+            Tacos, arepas, empanadas, rice, salads, sides.
+          </p>
+          <p class="package-meta" data-en="Serves 40–80 guests" data-es="Para 40–80 invitados">Serves 40–80 guests</p>
+          <p class="package-price" data-en="Starting at $22 per guest" data-es="Desde $22 por invitado">Starting at $22 per guest</p>
+        </article>
+
+        <article class="package-card">
+          <h3 data-en="Pasta & Comfort" data-es="Pasta y Comida Casera">Pasta & Comfort</h3>
+          <p data-en="Lasagna, Alfredo, Bolognese, salads, garlic bread."
+             data-es="Lasaña, Alfredo, Bolognese, ensaladas, pan de ajo.">
+            Lasagna, Alfredo, Bolognese, salads, garlic bread.
+          </p>
+          <p class="package-meta" data-en="Serves 25–60 guests" data-es="Para 25–60 invitados">Serves 25–60 guests</p>
+          <p class="package-price" data-en="Starting at $20 per guest" data-es="Desde $20 por invitado">Starting at $20 per guest</p>
+        </article>
+
+        <article class="package-card">
+          <h3 data-en="Kids Party Menu" data-es="Menú Infantil">Kids Party Menu</h3>
+          <p data-en="Nuggets, mini burgers, hot dogs, mac & cheese."
+             data-es="Nuggets, mini hamburguesas, hot dogs, mac & cheese.">
+            Nuggets, mini burgers, hot dogs, mac & cheese.
+          </p>
+          <p class="package-meta" data-en="Perfect for birthdays" data-es="Perfecto para cumpleaños">Perfect for birthdays</p>
+          <p class="package-price" data-en="Starting at $15 per guest" data-es="Desde $15 por invitado">Starting at $15 per guest</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery">
+      <h2 data-en="Gallery" data-es="Galería">Gallery</h2>
+
+      <p class="section-subtitle"
+         data-en="A look at our events, buffets, and bar service."
+         data-es="Un vistazo a nuestros eventos, buffets y servicio de bar.">
+        A look at our events, buffets, and bar service.
+      </p>
+
+      <!-- GALLERY IMAGES -->
+      <div class="gallery-grid">
+
+        <div class="gallery-img" style="
+          height:200px;
+          border-radius:12px;
+          background-size:cover;
+          background-position:center;
+          background-image:url('https://media.istockphoto.com/id/1888222333/photo/bandeja-paisa-typical-paisa-dish-beans-medellin-antioquia-paisa.webp?a=1&b=1&s=612x612&w=0&k=20&c=B90kCROOH6XcNEX5-rdAniPy-X98rOBKk4nCK9JTigM=');
+        "></div>
+
+        <div class="gallery-img" style="
+          height:200px;
+          border-radius:12px;
+          background-size:cover;
+          background-position:center;
+          background-image:url(https://media.istockphoto.com/id/2195777894/photo/dark-brown-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=89Wr4HRPUbRy2fmYXIGgG7k0tqeHgONcZTiyDqn7hfo=);
+        "></div>
+
+        <div class="gallery-img" style="
+          height:200px;
+          border-radius:12px;
+          background-size:cover;
+          background-position:center;
+          background-image:url('https://media.istockphoto.com/id/2257238665/photo/alfredo-chicken-pasta.webp?a=1&b=1&s=612x612&w=0&k=20&c=m-Z27ld8wIpxlNkVyt6C8wRPDZjAjrv1IJ-OK58ZTEc=');
+        "></div>
+
+        <div class="gallery-img" style="
+          height:200px;
+          border-radius:12px;
+          background-size:cover;
+          background-position:center;
+          background-image:url('https://images.unsplash.com/photo-1508253730651-e5ace80a7025?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWxjb2hvbHxlbnwwfHwwfHx8MA%3D%3D');
+        "></div>
+
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section reviews">
+      <h2 data-en="Client Reviews" data-es="Reseñas de Clientes">Client Reviews</h2>
+
+      <div class="reviews-grid">
+
+        <article class="testimonial">
+          <p class="stars">★★★★★</p>
+          <p data-en="Wedding – Anaheim – June 2026"
+             data-es="Boda – Anaheim – Junio 2026">
+            Wedding – Anaheim – June 2026
+          </p>
+          <p data-en="Amazing service and delicious food. Our guests loved the taco bar."
+             data-es="Servicio increíble y comida deliciosa. A nuestros invitados les encantó la barra de tacos.">
+            Amazing service and delicious food. Our guests loved the taco bar.
+          </p>
+          <span>- Maria G.</span>
+        </article>
+
+        <article class="testimonial">
+          <p class="stars">★★★★★</p>
+          <p data-en="Corporate Event – Orange County"
+             data-es="Evento Corporativo – Orange County">
+            Corporate Event – Orange County
+          </p>
+          <p data-en="Professional, on time, and the bar service was a hit."
+             data-es="Profesionales, puntuales y el servicio de bar fue un éxito.">
+            Professional, on time, and the bar service was a hit.
+          </p>
+          <span>- Kevin R.</span>
+        </article>
+
+        <article class="testimonial">
+          <p class="stars">★★★★★</p>
+          <p data-en="Birthday Party – Family Gathering"
+             data-es="Cumpleaños – Reunión Familiar">
+            Birthday Party – Family Gathering
+          </p>
+          <p data-en="Highly recommend for any event. Kids and adults were happy."
+             data-es="Los recomiendo para cualquier evento. Niños y adultos quedaron felices.">
+            Highly recommend for any event. Kids and adults were happy.
+          </p>
+          <span>- Sofia L.</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+      <h2 data-en="Frequently Asked Questions"
+          data-es="Preguntas Frecuentes">
+        Frequently Asked Questions
+      </h2>
+
+      <div class="faq-grid">
+
+        <div class="faq-item">
+          <h3 data-en="How far do you travel?"
+              data-es="¿Hasta dónde viajan?">
+            How far do you travel?
+          </h3>
+          <p data-en="We cater events across Orange County and nearby areas."
+             data-es="Atendemos eventos en Orange County y áreas cercanas.">
+            We cater events across Orange County and nearby areas.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 data-en="How much notice do you need?"
+              data-es="¿Con cuánta anticipación debo reservar?">
+            How much notice do you need?
+          </h3>
+          <p data-en="We recommend booking 2–4 weeks in advance."
+             data-es="Recomendamos reservar con 2–4 semanas de anticipación.">
+            We recommend booking 2–4 weeks in advance.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 data-en="Do you require a deposit?"
+              data-es="¿Requieren depósito?">
+            Do you require a deposit?
+          </h3>
+          <p data-en="Yes, a deposit is required to secure your date."
+             data-es="Sí, se requiere un depósito para asegurar tu fecha.">
+            Yes, a deposit is required to secure your date.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 data-en="Do you offer licensed bartending?"
+              data-es="¿Ofrecen bartenders licenciados?">
+            Do you offer licensed bartending?
+          </h3>
+          <p data-en="Yes, our bartenders are licensed and experienced."
+             data-es="Sí, nuestros bartenders están licenciados y tienen experiencia.">
+            Yes, our bartenders are licensed and experienced.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="section booking">
+      <h2 data-en="Booking Information"
+          data-es="Información de Reservas">
+        Booking Information
+      </h2>
+
+      <p class="booking-text"
+         data-en="To book with us, send us a message on WhatsApp with your event details."
+         data-es="Para reservar, envíanos un mensaje por WhatsApp con los detalles de tu evento.">
+        To book with us, send us a message on WhatsApp with your event details.
+      </p>
+
+      <a href="https://wa.me/15559876543"
+         class="whatsapp-btn">
+        WhatsApp: +1 (555) 987‑6543
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Title Catering — All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
